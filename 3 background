@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Background</title>
+
+    <style>
+        /* Background Warna */
+        .background-warna {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Background Campuran */
+        .background-campuran {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Background Gambar */
+        .background-gambar {
+            position: relative;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .background-gambar img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-warna">
+        <h2>Background Warna</h2>
+        <p>Ini adalah contoh penggunaan background warna.</p>
+    </div>
+
+    <div class="background-campuran">
+        <h2>Background Campuran</h2>
+        <p>Ini adalah contoh penggunaan background campuran (linear gradient).</p>
+    </div>
+
+    <div class="background-gambar">
+        <img src="/assets/strawberries.jpg" alt="Gambar Latar Belakang">
+        <h2>Background Gambar</h2>
+        <p>Ini adalah contoh penggunaan background gambar yang estetis.</p>
+    </div>
+</body>
+</html>
