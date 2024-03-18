@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Selector</title>
+
+    <style>
+        /* General Sibling Selector */
+        h2 ~ p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Heading Two</h2>
+    <span>This span is not affected.</span>
+    <p>General Sibling Selector.</p>
+    <p>General Sibling Selector.</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Selector</title>
+
+    <style>
+        /* Child Combinator Selector */
+        div > p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Child Combinator Selector.</p>
+        <span>This span is not affected.</span>
+        <p>Child Combinator Selector.</p>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Selector</title>
+
+    <style>
+        /* Descendant Combinator Selector (Whitespace) */
+        div p {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Descendant Combinator Selector (Whitespace).</p>
+        <span>This span is not affected.</span>
+    </div>
+    <p>Descendant Combinator Selector (Whitespace).</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Selector</title>
+
+    <style>
+        /* Attribute Value Selector */
+        input[type="text"] {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter your name">
+    <input type="password" placeholder="Enter your password">
+    <p>Attribute Value Selector</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Selector</title>
+
+    <style>
+        /* Negation Selector */
+        p:not(.special) {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <p>Negation Selector.</p>
+    <p class="special">This paragraph is special.</p>
+    <p>Negation Selector.</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Selector</title>
+
+    <style>
+        /* Column Selector */
+        td:nth-child(2) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th> Column Selector</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td> Column Selector</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td> Column Selector</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
